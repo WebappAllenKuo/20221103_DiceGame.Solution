@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.playButton = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.historyTextBox = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// playButton
@@ -42,21 +42,21 @@
 			this.playButton.UseVisualStyleBackColor = true;
 			this.playButton.Click += new System.EventHandler(this.playButton_Click);
 			// 
-			// textBox1
+			// historyTextBox
 			// 
-			this.textBox1.Location = new System.Drawing.Point(31, 60);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(273, 305);
-			this.textBox1.TabIndex = 1;
+			this.historyTextBox.Location = new System.Drawing.Point(31, 60);
+			this.historyTextBox.Multiline = true;
+			this.historyTextBox.Name = "historyTextBox";
+			this.historyTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.historyTextBox.Size = new System.Drawing.Size(273, 305);
+			this.historyTextBox.TabIndex = 1;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(332, 397);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.historyTextBox);
 			this.Controls.Add(this.playButton);
 			this.Name = "Form1";
 			this.Text = "Form1";
@@ -68,7 +68,7 @@
 		#endregion
 
 		private System.Windows.Forms.Button playButton;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox historyTextBox;
 	}
 }
 

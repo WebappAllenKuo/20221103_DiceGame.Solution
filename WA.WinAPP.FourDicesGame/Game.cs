@@ -64,5 +64,10 @@ namespace WA.WinAPP.FourDicesGame
 
 			return result;
 		}
+
+		public override string ToString()
+		{
+			return $"骰子: {Dices[0]}, {Dices[1]}, {Dices[2]}, {Dices[3]}. 總點數: {GetPoints()}";
+		}
 	}
 }

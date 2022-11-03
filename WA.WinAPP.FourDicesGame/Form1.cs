@@ -19,7 +19,18 @@ namespace WA.WinAPP.FourDicesGame
 
 		private void playButton_Click(object sender, EventArgs e)
 		{
+			Game game = null;
+			while (game == null)
+			{
+				try
+				{
+					game = new Game(1, 5, 6, 5); // 點數7
+				}
+				catch
+				{ }
+			}
 
+			historyTextBox.Text += game.ToString() + "\r\n";
 		}
 	}
 }
