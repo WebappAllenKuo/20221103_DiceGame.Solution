@@ -58,8 +58,11 @@
 			this.ClientSize = new System.Drawing.Size(332, 397);
 			this.Controls.Add(this.historyTextBox);
 			this.Controls.Add(this.playButton);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "四顆骰子遊戲";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

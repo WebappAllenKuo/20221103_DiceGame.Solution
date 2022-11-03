@@ -47,6 +47,28 @@ namespace WA.WinAPP.FourDicesGame
 			Dices = items;
 		}
 
+		public static Game NewGame()
+		{
+			var random = new Random(Guid.NewGuid().GetHashCode());
+			int min = 1, max = 7;
+			Game game = null;
+			while (game == null)
+			{
+				try
+				{
+					game = new Game(random.Next(min, max),
+						random.Next(min, max),
+						random.Next(min, max),
+						random.Next(min, max));
+				}
+				catch
+				{
+				}
+			}
+
+			return game;
+		}
+
 		/// <summary>
 		/// 計算點數-扣除成對的最小點數兩顆,剩餘兩顆點數的總和
 		/// </summary>
