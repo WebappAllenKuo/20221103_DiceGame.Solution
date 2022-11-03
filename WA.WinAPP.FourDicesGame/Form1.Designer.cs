@@ -28,13 +28,47 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.playButton = new System.Windows.Forms.Button();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.SuspendLayout();
+			// 
+			// playButton
+			// 
+			this.playButton.Location = new System.Drawing.Point(31, 30);
+			this.playButton.Name = "playButton";
+			this.playButton.Size = new System.Drawing.Size(75, 23);
+			this.playButton.TabIndex = 0;
+			this.playButton.Text = "Play";
+			this.playButton.UseVisualStyleBackColor = true;
+			this.playButton.Click += new System.EventHandler(this.playButton_Click);
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(31, 60);
+			this.textBox1.Multiline = true;
+			this.textBox1.Name = "textBox1";
+			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.textBox1.Size = new System.Drawing.Size(273, 305);
+			this.textBox1.TabIndex = 1;
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(332, 397);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.playButton);
+			this.Name = "Form1";
 			this.Text = "Form1";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Button playButton;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }
 

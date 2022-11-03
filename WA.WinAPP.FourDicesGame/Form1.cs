@@ -16,5 +16,10 @@ namespace WA.WinAPP.FourDicesGame
 		{
 			InitializeComponent();
 		}
+
+		private void playButton_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
